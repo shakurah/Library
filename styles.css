@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.header{
+
+    background-color: #1C1C1C;
+    color: white;
+    padding: 20px;
+    font-family: sans-serif
+
+}
+.books {
+    display: flex;
+    gap: 20px
+    padding: 20px;
+    
+}
+
+.card {
+    border: 1px solid black;
+    width: 250px;
+}
