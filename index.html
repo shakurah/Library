@@ -14,8 +14,33 @@
         </div>
         <div class="books">
             <div class="card">
-
+                
             </div>
+            
+        </div>
+        <div class="new-book">
+            <button command="show-modal" commandfor="newBook" type="button"> New Book</button>
+        </div>
+
+        <dialog id="newBook">
+            <div class="newBookModal" id="newBookModal">
+                <div class="modal-content">
+                    <div class="close-button-container">
+                        <button type="button" class="close-button" commandfor="newBook" command="close"> &times;</button>
+                    </div>
+                </div>
+                <form method="newBook">
+                    <label for="tile"> Title of the Book: </label>
+                    <input type="text" id="title" name="title"><br />
+                    <label for="author"> Author of the Book:</label>                    
+                    <input type="text" id="author" name="author"><br />
+                    <label for="date"> Date Published </label>
+                    <input type="date" id="date" name="date"><br />
+                    <input type="submit" id="addBook" value="Add Book" >
+                </form>
+            </div>
+        </dialog>
+       
         </div>
     </div>
 
