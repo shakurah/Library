@@ -31,7 +31,7 @@ A small browser-based library app for managing a collection of books. This proje
 Open the page in a modern browser (the script uses crypto.randomUUID(), so a current browser is recommended).
 
 
-## API / Implementation notes (script.js)
+## Implementation notes (script.js)
 
 The code's primary pieces:
 
@@ -64,8 +64,6 @@ The code's primary pieces:
     - Remove button: removes the book from myLibrary (splice) and re-renders.
 
 ## Development notes
-
-- Browser compatibility: the script uses `crypto.randomUUID()` which is available in modern browsers. If older browsers must be supported, replace UUID generation with a polyfill or other ID generator.
 
 - To extend:
   - Add persistent storage (localStorage or IndexedDB) if the collection should survive refreshes.
